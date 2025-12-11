@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8i">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Latihan Navbar</title>
+
+	<style>
+	.navbar {
+		position: flex;
+		width: 100%;
+		color: white;
+		background-color: #222;
+		height: 60px;
+		display: flex;
+		top: 0;
+		box-sizing: border-box;
+		z-index: 1000;
+		align-items: center;
+		justify-content: space-between;
+		
+	}
+	
+	.nav-links {
+		list-style: none;
+		display: flex;
+		gap: 25px;
+		margin-right: 35px;
+		
+	}
+	
+	.nav-links li a {
+		color: #f4f4f9;
+		text-decoration: none;
+		font-size: 17px;
+		transition: 0.3s;
+		
+		background-color: white;
+		color: black;
+		padding: 10px 20px;
+		border-radius: 20px;
+	}
+	
+	.nav-links li a:hover {
+		background-color: grey;
+		color: white;
+	}
+	
+	#content {
+		padding: 80px 20px;
+		min-height: 400px;
+		background: url('background.png') no-repeat center/cover;
+		color: white;
+		font-size: 20px;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+		box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		
+	}
+	
+	.logo {
+		font-family: Poppins, sans-serif;
+		font-size: 40px;
+		font-weight: 900;
+		margin-left: 30px;
+		
+		
+		background: linear-gradient(270deg, #ff5edf, #04c8de, #fffc00, #ff5edf);
+		background-size: 800% 800%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: aurora 10s ease infinite;
+		text-transform: uppercase;
+	}
+	
+	@keyframes aurora {
+		0% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+		100% { background-position: 0% 50%; }
+	}
+	</style>
+<head>
+
+<body>
+	<nav class="navbar">
+	<div class="logo">
+		RAPZ
+	</div>
+		<ul class="nav-links">
+		<li><a href="#">Beranda</a></li>
+		<li><a href="../Tugas Pak Istakim/index.html" target="_blank">Profil</a></li>
+		<li><a href="#">Kontak</a></li>
+		<li><a href="#">Data Pengunjung</a></li>
+		</ul>
+	</nav>
+	
+	<section id="content">
+		<h1>Selamat Datang!</h1>
+		<p>Ini adalah website saya</p>
+	</section>
+</body>
+
+</html>
